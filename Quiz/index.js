@@ -75,7 +75,8 @@ app.get('/', (req, res) => {
 app.post('/', (req, res) => {
     const userAnswer = req.body.capital.trim().toLowerCase();
     const correctAnswer = req.body.correctCapital.toLowerCase();
-    
+
+    let checkAnswer ='';
     let gameover =false;
     let updatescore =0;
     let alert = '';
@@ -88,6 +89,7 @@ app.post('/', (req, res) => {
         score=0;
         gameover=true;
         alert = 'Game Over! Your final score';
+        checkAnswer = CnC[randomIndex].capital;
     }
 
 
@@ -95,7 +97,7 @@ app.post('/', (req, res) => {
     const randomcountry = CnC[randomIndex].country; 
     const capital = CnC[randomIndex].capital;  
 
-    res.render('home', { country: randomcountry, capital: capital, score: score, alertMessage: alert, gameOver:gameover, finals:updatescore });
+    res.render('home', { country: randomcountry, capital: capital, score: score, alertMessage: alert, gameOver:gameover, finals:updatescore , update:checkAnswer });
 });
 
 
