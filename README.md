@@ -19,17 +19,20 @@ Map It Right is an interactive quiz game that tests users' knowledge of world ca
 - **Backend:**
   - **Node.js**: JavaScript runtime environment.
   - **Express.js**: Web application framework for Node.js to handle routing.
-  - **PostgreSQL**: Relational database for storing country-capital data.
+  - **Firestore**: Real-time NoSQL database for storing country-capital data.
 
 - **Deployment:**
   - **Render**: Cloud platform for hosting the application.
   - **GitHub**: Version control and repository hosting.
+
 ## Preview
+
 - **Here is a preview of the game's frontend. The layout and user interface display the country and its corresponding capital for the user to guess.**
  
   - **Front-End**
- 
+
   ![Screenshot 2024-12-11 192835](https://github.com/user-attachments/assets/7095eb08-5e2d-4c86-bc3f-f83dea90cdd8)
+  
   - **Score updation**
 
   ![Screenshot 2024-12-11 193232](https://github.com/user-attachments/assets/ab361c55-f3dc-45ef-9c82-e75162a1c9ff)
@@ -39,4 +42,12 @@ Map It Right is an interactive quiz game that tests users' knowledge of world ca
 
   ![Screenshot 2024-12-11 193310](https://github.com/user-attachments/assets/878832d4-77d5-4802-bb2f-025bade69410)
 
+## Play the Game
 
+You can try out the game here: [Map It Right Live Demo](https://map-it-right.onrender.com)
+
+## How to Run Locally
+
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/your-username/map-it-right.git
