@@ -1,0 +1,33 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/home.css">
+  <link rel="icon" href="/map.png" sizes="32x32" type="image/png">
+  <title>Map It Right</title>
+</head>
+<body>
+
+  <div class="quiz-container">
+    <p>Total Score: <span id="score"><%= score %></span></p>
+    <div class="question">
+      <p>What is the capital of <span style="font-weight: 600;"><%= country %></span>?</p>
+    </div>
+
+    <form method="POST" action="/">
+      <div class="input-section">
+        <input type="text" name="capital" placeholder="Enter the capital" autocomplete="off" autofocus required>
+        <input type="hidden" name="correctCapital" value="<%= capital %>">
+        <button class="btn-submit" type="submit">Submit</button>
+      </div>
+    </form>
+
+  </div>
+  
+  <% if (gameOver) { %>
+    <script>alert("<%= alertMessage %> : <%= finals %>");</script>   
+  <% } %>
+  
+</body>
+</html>

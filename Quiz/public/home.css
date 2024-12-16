@@ -1,0 +1,132 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url(13302.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+.quiz-container {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  max-width: 500px;
+}
+
+p {
+  margin: 0;
+  padding: 10px;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.question {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.input-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input[type="text"] {
+  width: 100%;
+  max-width: 400px;
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+::placeholder {
+  text-align: center;
+}
+
+.btn-submit {
+  margin-top: 10px;
+  padding: 12px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  background-color: #f5d719;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  max-width: 400px;
+  transition: background-color 0.4s ease-in-out;
+}
+
+.btn-submit:hover {
+  background-color: #0056b3;
+}
+
+@media (min-width: 576px) {
+  .quiz-container {
+      width: 80%;
+      max-width: 600px;
+  }
+
+  input[type="text"],
+  .btn-submit {
+      width: 80%;
+      max-width: 400px;
+  }
+}
+
+@media (min-width: 768px) {
+  .quiz-container {
+      width: 70%;
+      max-width: 700px;
+  }
+
+  input[type="text"],
+  .btn-submit {
+      width: 70%;
+      max-width: 500px;
+  }
+}
+
+@media (min-width: 992px) {
+  .quiz-container {
+      width: 80%;
+      max-width: 800px;
+  }
+
+  input[type="text"],
+  .btn-submit {
+      width: 80%;
+      max-width: 600px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .quiz-container {
+      width: 90%;
+      max-width: 1000px;
+  }
+
+  input[type="text"],
+  .btn-submit {
+      width: 90%;
+      max-width: 700px;
+  }
+}
