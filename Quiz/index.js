@@ -31,9 +31,12 @@ const db= new pg.Client({
     port: process.env.DB_PORT || 5432,
 }); */
 
+const serviceAccountPath = '/etc/secrets/serviceAccountKey.json';
+
 firebase.initializeApp({
-    credential: firebase.credential.cert(process.env.FIREBASE_CREDENTIALS)
+    credential: firebase.credential.cert(serviceAccountPath)
 });
+
 
 /* Initializing Firestore */
 const db = firebase.firestore();
