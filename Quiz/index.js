@@ -80,6 +80,7 @@ app.post('/', (req, res) => {
     let gameover =false;
     let updatescore =0;
     let alert = '';
+    const randomIndex = Math.floor(Math.random() * CnC.length);
     if (userAnswer === correctAnswer) {
         score++; 
     }else if(userAnswer === ''){
@@ -93,7 +94,6 @@ app.post('/', (req, res) => {
     }
 
 
-    const randomIndex = Math.floor(Math.random() * CnC.length);
     const randomcountry = CnC[randomIndex].country; 
     const capital = CnC[randomIndex].capital;  
 
