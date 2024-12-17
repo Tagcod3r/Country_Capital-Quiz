@@ -44,7 +44,7 @@ Map It Right is an interactive quiz game that tests users' knowledge of world ca
 
 ## Play the Game
 
-You can try out the game here: [Map It Right Live Demo](https://map-it-right.onrender.com)
+You can try out the game here: [Map It Right Live](https://map-it-right.onrender.com)
 
 ## How to Run Locally
 
