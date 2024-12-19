@@ -1,15 +1,31 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/home.css">
+  <meta name="description" content="Test your knowledge of world capitals with 'Map It Right,' a fun and engaging quiz game. Play now to challenge yourself!">
+  <meta name="keywords" content="quiz, geography quiz, capital cities quiz, Map It Right, fun quiz games, world capitals">
+  <meta name="author" content="Your Name">
+  <meta property="og:title" content="Map It Right - Capital Cities Quiz Game">
+  <meta property="og:description" content="Challenge yourself with our world capitals quiz game. See how many you can get right!">
+  <meta property="og:image" content="/map.png">
+  <meta property="og:url" content="https://yourwebsite.com">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Map It Right - Capital Cities Quiz Game">
+  <meta name="twitter:description" content="Test your knowledge of world capitals with our fun quiz game.">
+  <meta name="twitter:image" content="/map.png">
   <link rel="icon" href="/map.png" sizes="32x32" type="image/png">
-  <title>Map It Right</title>
+  <link rel="stylesheet" href="/home.css">
+  <title>Map It Right - Capital Cities Quiz Game</title>
 </head>
 <body>
+  <header>
+    <h1>Map It Right</h1>
+    <p>A fun way to learn and test your knowledge of world capitals!</p>
+  </header>
 
-  <div class="quiz-container">
+  <main class="quiz-container">
     <p>Total Score: <span id="score"><%= score %></span></p>
     <div class="question">
       <p>What is the capital of <span style="font-weight: 600;"><%= country %></span>?</p>
@@ -17,17 +33,22 @@
 
     <form method="POST" action="/">
       <div class="input-section">
-        <input type="text" name="capital" placeholder="Enter the capital" autocomplete="off" autofocus required>
+        <label for="capital">Your Answer:</label>
+        <input id="capital" type="text" name="capital" placeholder="Enter the capital" autocomplete="off" autofocus required>
         <input type="hidden" name="correctCapital" value="<%= capital %>">
         <button class="btn-submit" type="submit">Submit</button>
       </div>
     </form>
+  </main>
 
-  </div>
-  
   <% if (gameOver) { %>
-    <script>alert("<%= alertMessage %> : <%= finals %> , Right Answer : <%= update%>");</script>   
+    <script>
+      alert("<%= alertMessage %>: <%= finals %>, Right Answer: <%= update %>");
+    </script>
   <% } %>
-  
+
+  <footer>
+    <p>&copy; 2024 Map It Right. All rights reserved.</p>
+  </footer>
 </body>
 </html>
