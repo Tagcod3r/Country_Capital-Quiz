@@ -20,6 +20,9 @@
   <title>Map It Right - Capital Cities Quiz Game</title>
 </head>
 <body>
+<div id="loading-screen">
+        <div id="loading-circle"></div>
+    </div>
   <main class="quiz-container">
     <p>Total Score: <span id="score"><%= score %></span></p>
     <div class="question">
@@ -41,5 +44,10 @@
       alert("<%= alertMessage %>: <%= finals %>, Right Answer: <%= update %>");
     </script>
   <% } %>
+ window.onload = function()
+        {
+        const loadingScreen = document.getElementById('loading-screen');
+        loadingScreen.style.display = 'none';
+        };
 </body>
 </html>
