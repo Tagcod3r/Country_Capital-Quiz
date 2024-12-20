@@ -35,8 +35,7 @@ p {
 .question {
   font-size: 1.5rem;
   font-weight: 400;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin: 20px 0;
   text-align: center;
 }
 
@@ -82,95 +81,85 @@ input[type="text"] {
 
 @media (min-width: 576px) {
   .quiz-container {
-      width: 80%;
-      max-width: 600px;
+    width: 80%;
+    max-width: 600px;
   }
-
-  input[type="text"],
-  .btn-submit {
-      width: 80%;
-      max-width: 400px;
+  input[type="text"], .btn-submit {
+    width: 80%;
+    max-width: 400px;
   }
 }
 
 @media (min-width: 768px) {
   .quiz-container {
-      width: 70%;
-      max-width: 700px;
+    width: 70%;
+    max-width: 700px;
   }
-
-  input[type="text"],
-  .btn-submit {
-      width: 70%;
-      max-width: 500px;
+  input[type="text"], .btn-submit {
+    width: 70%;
+    max-width: 500px;
   }
 }
 
 @media (min-width: 992px) {
   .quiz-container {
-      width: 80%;
-      max-width: 800px;
+    width: 80%;
+    max-width: 800px;
   }
-
-  input[type="text"],
-  .btn-submit {
-      width: 80%;
-      max-width: 600px;
+  input[type="text"], .btn-submit {
+    width: 80%;
+    max-width: 600px;
   }
 }
 
 @media (min-width: 1200px) {
   .quiz-container {
-      width: 90%;
-      max-width: 1000px;
+    width: 90%;
+    max-width: 1000px;
   }
-
-  input[type="text"],
-  .btn-submit {
-      width: 90%;
-      max-width: 700px;
+  input[type="text"], .btn-submit {
+    width: 90%;
+    max-width: 700px;
   }
 }
+
 #loading-screen {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(255, 255, 255, 0.8); 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 9999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
 }
 
 #loading-circle {
-    width: 6vw; 
-    height: 6vw; 
-    border: 4px solid #f3f3f3; 
-    border-top: 4px solid #3498db; 
-    border-radius: 50%; 
-    animation: spin 1s linear infinite; 
+  width: 8vw;
+  height: 8vw;
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #3498db;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
 }
-
 
 @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
-
 
 @media (max-width: 600px) {
-    #loading-circle {
-        width: 6vw; 
-        height: 6vw; 
-    }
+  #loading-circle {
+    width: 6vw;
+    height: 6vw;
+  }
 }
 
-
 @media (min-width: 601px) and (max-width: 1024px) {
-    #loading-circle {
-        width: 8vw;
-        height: 8vw; 
-    }
+  #loading-circle {
+    width: 8vw;
+    height: 8vw;
+  }
 }
