@@ -20,15 +20,14 @@
   <title>Map It Right - Capital Cities Quiz Game</title>
 </head>
 <body>
-<div id="loading-screen">
-        <div id="loading-circle"></div>
-    </div>
+  <div id="loading-screen">
+    <div id="loading-circle"></div>
+  </div>
   <main class="quiz-container">
     <p>Total Score: <span id="score"><%= score %></span></p>
     <div class="question">
       <p>What is the capital of <span style="font-weight: 600;"><%= country %></span>?</p>
     </div>
-
     <form method="POST" action="/">
       <div class="input-section">
         <label for="capital">Your Answer:</label>
@@ -38,19 +37,16 @@
       </div>
     </form>
   </main>
-
   <% if (gameOver) { %>
     <script>
       alert("<%= alertMessage %>: <%= finals %>, Right Answer: <%= update %>");
     </script>
   <% } %>
-<script>
-window.onload = function()
-        {
-        const loadingScreen = document.getElementById('loading-screen');
-        loadingScreen.style.display = 'none';
-        };
-</script>
- 
+  <script>
+    window.onload = function() {
+      const loadingScreen = document.getElementById('loading-screen');
+      loadingScreen.style.display = 'none';
+    };
+  </script>
 </body>
 </html>
