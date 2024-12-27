@@ -75,6 +75,7 @@ app.get('/', (req, res) => {
 app.post('/', (req, res) => {
     const userAnswer = req.body.capital.trim().toLowerCase();
     const correctAnswer = req.body.correctCapital.toLowerCase();
+    const correct=req.body.correctCapital;
 
     let checkAnswer ='';
     let gameover =false;
@@ -90,7 +91,7 @@ app.post('/', (req, res) => {
         score=0;
         gameover=true;
         alert = 'Game Over! Your final score';
-        checkAnswer = correctAnswer;
+        checkAnswer = correct;
     }
 
 
