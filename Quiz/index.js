@@ -80,7 +80,7 @@ app.post('/', (req, res) => {
     let gameover =false;
     let updatescore =0;
     let alert = '';
-    const randomIndex = Math.floor(Math.random() * CnC.length);
+    
     if (userAnswer === correctAnswer) {
         score++; 
     }else if(userAnswer === ''){
@@ -90,7 +90,7 @@ app.post('/', (req, res) => {
         score=0;
         gameover=true;
         alert = 'Game Over! Your final score';
-        checkAnswer = CnC[randomIndex].capital;
+        checkAnswer = correctAnswer;
     }
 
 
