@@ -76,6 +76,7 @@ app.post('/', (req, res) => {
     const userAnswer = req.body.capital.trim().toLowerCase();
     const correctAnswer = req.body.correctCapital.toLowerCase();
     const correct=req.body.correctCapital;
+    const randomIndex = Math.floor(Math.random()*CnC.length);
 
     let checkAnswer ='';
     let gameover =false;
