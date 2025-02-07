@@ -19,7 +19,7 @@ Map It Right is an interactive quiz game that tests users' knowledge of world ca
 - **Backend:**
   - **Node.js**: JavaScript runtime environment.
   - **Express.js**: Web application framework for Node.js to handle routing.
-  - **PostgreSql**: A powerful, open-source relational database used during the development phase for efficiently storing and managing structured country-capital data.
+  - **PostgreSql**: A powerful, open-source relational database used during the development phase for efficiently storing and managing country-capital data.
   - **Firestore**: A real-time NoSQL database used in the deployment phase for dynamic and scalable storage of country-capital data.
 
 - **Deployment:**
