@@ -1,0 +1,14 @@
+name: Keep Render App Alive
+
+on:
+  schedule:
+    # This runs every 14 minutes (CRON format in UTC)
+    - cron: '*/14 * * * *'
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Ping the Render App
+        run: curl --silent --show-error https://map-it-right.onrender.com
