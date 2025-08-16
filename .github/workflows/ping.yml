@@ -2,8 +2,8 @@ name: Keep Render App Alive
 
 on:
   schedule:
-    # This runs every 14 minutes (CRON format in UTC)
-    - cron: '*/14 * * * *'
+    # Runs once every hour (CRON format in UTC)
+    - cron: "0 * * * *"
 
 jobs:
   ping:
